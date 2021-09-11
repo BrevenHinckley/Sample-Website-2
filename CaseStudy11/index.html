@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <title>The Golfers Guide</title>
+    <!--
+      The Golfers Guide main web page
+      Filename:  index.html
+
+      Author:    Breven G. Hinckley
+      Date:      09-07-17
+    -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="external/styles.css">
+    <script src="modernizr.custom.05819.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">The Golfers Guide</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="tips.html">Tips<span class="sr-only">(current)</span></a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="contact.html">Book A Lesson</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container main">
+      <div class="row col-lg-15 col-md-15 col-sm-15 col-xs-15">
+        <div id="myCarousel" class="carousel slide" data-interval="9001" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target = "#myCarousel" data-slide-to = "0" class="active"></li>
+            <li data-target = "#myCarousel" data-slide-to = "1"></li>
+            <li data-target = "#myCarousel" data-slide-to = "2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src ="images/landscape.jpg" alt="Golf Course" class="img-responsive" id="welcomeImage">
+              <div class="carousel-caption carouselShadow">
+                <h1>Welcome to The Golfers Guide!</h1>
+                <p>We are here to improve your game.</p>
+              </div>
+            </div>
+            <div class="item">
+              <a href="tips.html"><img src ="images/welcome.jpg" alt="Golfer" class="img-responsive"></a>
+              <div class="carousel-caption carouselShadow">
+                <h2>Let us teach you how to play like a pro.</h2>
+                <p><a class="btn btn-success btn-lg" href="tips.html" role="button">Tips Page</a></p>
+              </div>
+            </div>
+            <div class="item">
+              <a href="contact.html"><img src ="images/lesson.jpg" alt="Golf Instructor" class="img-responsive"></a>
+              <div class="carousel-caption carouselShadow">
+                <h1>Book A Lesson Today!</h1>
+                <p><a class="btn btn-success btn-lg" href="contact.html" role="button">Contact Us</a></p>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+          </a>
+          <a class="carousel-control right" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+          </a>
+        </div>
+      </div>
+      <h1 class="page-header">Welcome to The Golfers Guide! <small>Our mission is to help you improve your golf game.</small></h1>
+      <p class="links">We are a collective of golf professionals dedicated to expanding and sharing our golf knowledge with you to improve your game. With our guidance and plenty of practice you should see your game steadily improve. Whether you aspire to become a golf professional or just want to impress your friends on the course, we have something for you. So, lets begin; first step is finding out what your handicap is. If you already know your handicap feel free to head over to our <a href="tips.html">Tips Page</a>.</p>
+      <br>
+      <p class="lead">Handicap Calculator</p>
+      <p>The first step to finding out your handicap starts with getting some rounds in and collecting data from those performances. Generally, a range of 5-20 of your most current rounds will suffice as enough reps to accurately calculate your handicap. You will need to find the course rating and slope of the golf property you played on.</p>
+      <p>The reason why course rating and slope have a major role with the handicap differential calculation is because both figures indicate course difficulty. For example, let’s say that Bill and Steve averaged 100 strokes over 18 holes, but Steve played a more difficult course than Bill. As an alternative to using averaged scores to determine the handicap index, distinct skill level is factored into the comparisons. Thus, Steve would be more skilled than Bill on the average golf course.</p>
+      <br>
+      <div class="row">
+        <div class="col-md-5 handiForm">
+          <form>
+            <div class="form-group">
+              <label for="scoreValue">
+                Enter your score:
+              </label>
+              <input type="number" class="form-control" id="scoreValue" placeholder="Your score">
+            </div>
+            <div class="form-group">
+              <label for="courseValue">
+                Enter the course rating:
+              </label>
+              <input type="number" class="form-control" id="courseValue" placeholder="Course Rating">
+            </div>
+            <div class="form-group">
+              <label for="slopeValue">
+                Enter the slope (listed on your scorecard):
+              </label>
+              <input type="number" class="form-control" id="slopeValue" placeholder="Course Slope">
+            </div>
+            <br>
+          </form>
+          <button class="btn btn-success btn-lg" id="hands">Calculate Handicap</button>
+        </div>
+        <div class="col-md-7">
+          <div class="text-center" id="handiBox">
+            Your handicap is:
+            <p id="result"></p>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <p class="links">Now that you know your handicap, you can begin your training. Head over to the <a href="tips.html">Tips Page</a> to begin. If you would like much more indepth coaching you can <a href="contact.html">contact us or book a lesson</a>.
+      <div style="height: 30px;"></div>
+	  </div>
+    <div class="container border text-center footer">
+      <ul class="list-inline">
+        <li><b>&copy; The Golfers Guide Inc.</b></li>
+        <li style="width: 10px;"></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tips.html">Tips</a></li>
+        <li><a href="contact.html">Book A Lesson</a></li>
+      </ul>
+	  </div>
+    <script src="external/js.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	  <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+</html>

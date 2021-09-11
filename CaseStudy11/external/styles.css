@@ -1,0 +1,87 @@
+/* page backgrounds */
+body {
+  background: rgb(117, 194, 50);
+  background: url("../images/golf.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.main {
+  background-color: ivory;
+  box-shadow: 0.1px 1.3px 1px 1px gray;
+}
+.navbar {
+  margin-bottom: 0;
+}
+
+/* Carousel */
+#myCarousel {
+  border-left: 0.5px solid gray;
+  border-right: 0.5px solid gray;
+  border-bottom: 1px solid gray;
+}
+.btn {
+  border: 1px solid black;
+  color: black;
+}
+.carouselShadow {
+  text-shadow: 1px 1px black;
+}
+
+/* body */
+.spacing {
+  line-height: 2.3em;
+}
+#handiBox {
+  border: 4px double black;
+  margin: 0.5em 4em 0 0;
+  padding: 1em;
+  font-size: 2.5em;
+  display: none;
+}
+#result {
+  font-weight: bold;
+  margin-top: 1em;
+}
+.required {
+  color: red;
+  margin-left: 25em;
+}
+
+/* links */
+.links a:link {
+  color: rgb(117, 194, 50);
+}
+.links a:visited {
+  color: rgb(36, 157, 238);
+}
+.links a:hover {
+  text-decoration: none;
+  color: whitesmoke;
+  background-color: rgb(117, 194, 50);
+}
+
+/* forms */
+#scoreValue, #courseValue, #slopeValue {
+  width: 10em;
+}
+
+/* footer */
+.footer {
+  background-color: rgb(28, 27, 27);
+  color: ivory;
+  padding-top: 10px;
+	padding-bottom: 5px;
+	border: 1px solid gray;
+}
+.footer a:link {
+  color: rgb(117, 194, 50);
+}
+.footer a:visited {
+  color: rgb(36, 157, 238);
+}
+.footer a:hover {
+  text-decoration: none;
+  color: whitesmoke;
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <title>Book A Lesson</title>
+    <!--
+      The Golfers Guide contact page
+      Filename:  contact.html
+
+      Author: Stacy Weter
+      Date:
+    -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="external/styles.css">
+    <script src="modernizr.custom.05819.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">The Golfers Guide</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="tips.html">Tips<span class="sr-only">(current)</span></a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="contact.html">Book A Lesson</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container main">
+		<h1>Lesson Information</h1>
+    <br>
+			<h4>Our professional golf instructors are available for group or private lessons.</h4>
+      <p>Group lessons consist of no more than 5 students and are booked in hour intervals ranging from 1 hour to 4 hours long.  Fees for lessons are based upon the skill set of the student.
+         Private lessons are avaliable (additional $200 fee per lesson).</p>
+         <br>
+			<h4>To book a lesson:</h4>
+			<form class="form-horizontal">
+				<div class="form-group">
+					<label for="name" class="col-sm-3 control-label">Name *</label>
+					<div class="col-sm-3">
+						<input type="text" class="form-control" id="name" />
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="phone" class="col-sm-3 control-label">Phone Number *</label>
+					<div class="col-sm-3">
+						<input type="text" class="form-control" id="phone" placeholder="(123)456-7890" />
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="lessonhrs" class="col-sm-3 control-label">Select length of lesson in hours (1&#8209;4)</label>
+					<div class="col-sm-1">
+						<input type="number" class="form-control" min="1" max="4" id="lessonhrs" value="1" />
+					</div>
+				</div>
+				<div class="form-group">
+          <div class="radio-inline">
+            <label class="col-sm-5 control-label">
+              Please select the skill level of the student
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="selectedLevel" id="beginner" value="beginner" checked="checked">
+              Beginner
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="selectedLevel" id="intermediate" value="intermediate">
+              Intermediate
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="selectedLevel" id="advanced" value="advanced">
+              Advanced
+            </label>
+          </div>
+				</div>
+				<div class="form-group">
+					<div class="checkbox">
+						<label for="private" class="col-sm-3 control-label">
+							<input type="checkbox" value="private" id="private">
+							Private Lesson
+						</label>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="comments" class="col-sm-3 control-label">Comments</label>
+					<div class="col-sm-4">
+						<textarea class="form-control" rows="3" id="comments"></textarea>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-sm-offset-4 col-sm-10">
+						<button type="submit" class="btn btn-success btn-lg" id="scheduleLesson">Submit</button>
+					</div>
+				</div>
+		</form>
+    <p class="required">* indicates required field.</p>
+    <br>
+		<h3>Lessons can also be booked by phone or through email.</h3>
+		<h4>Questions? Please contact us!  We are always ready to help!</h4>
+		<p>By Phone:(111) 222-3333</p>
+		<p>By Email: golfpros@golfing.com</p>
+    <br>
+    <h2 class="text-center">Times that we are open for lessons:</h2>
+    <br>
+    <table class="table table-bordered table-responsive" id="look">
+      <tr class="success">
+        <th class="danger text-center"><p class="text-center">No Lessons</p></th>
+        <th class="text-center"><p class="text-center">6am To 6pm</p></th>
+        <th class="text-center"><p class="text-center">7am To 5pm</p></th>
+        <th class="text-center"><p class="text-center">7am to 5pm</p></th>
+        <th class="text-center"><p class="text-center">6am to 6pm</p></th>
+        <th class="text-center"><p class="text-center">12pm to 6pm</p></th>
+        <th class="text-center"><p class="text-center">12pm to 6pm</p></th>
+      </tr>
+    </table>
+    <br>
+	  </div>
+    <div class="container border text-center footer">
+      <ul class="list-inline">
+        <li><b>&copy; The Golfers Guide Inc.</b></li>
+        <li style="width: 10px;"></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tips.html">Tips</a></li>
+        <li><a href="contact.html">Book A Lesson</a></li>
+      </ul>
+	  </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	  <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script>
+    // This script section is for testing code on this page.
+    // All working JavaScript has been moved to the js.js file
+      //var instructorCost = 0;
+      //var totalCost = 0;
+    </script>
+  <script src="external/js.js"></script>
+  </body>
+</html>
